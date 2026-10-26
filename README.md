@@ -1,15 +1,13 @@
-> [![Awesome list badge](https://awesome.re/badge.svg)](https://awesome.re) A curated list of awesome open source technology for agriculture, farming and gardening. [Pull requests welcome!](https://github.com/beaorn/awesome-agriculture)
+> [![Awesome list badge](https://awesome.re/badge.svg)](https://awesome.re) A curated list of awesome open source technology for agriculture, farming and gardening. [Pull requests welcome!](https://github.com/samuk/awesome-agriculture)
 
-[Agriculture](https://en.wikipedia.org/wiki/Agriculture) is the science and art of cultivating plants and livestock for food and materials. This list covers open source robotics, hardware, data, modelling and software for farms and growers.
 
-Contributions welcome! Please follow the [contributing guidelines](https://github.com/beaorn/awesome-agriculture/blob/master/contributing.md).
+Contributions welcome! Please follow the [contributing guidelines](https://github.com/samuk/awesome-agriculture/blob/master/contributing.md). Repos not updated in last 12 months are in [LEGACY](https://github.com/samuk/awesome-agriculture/blob/master/LEGACY.md)
 
 ## Contents
 
 | Section | Subsections |
 | :--- | :--- |
 | [Automation and Robotics](#automation-and-robotics) |  |
-| [Calculators](#calculators) |  |
 | [Climate, Environment and Weather](#climate-environment-and-weather) |  |
 | [Crop Modelling, Phenotyping and Pathology](#crop-modelling-phenotyping-and-pathology) |  |
 | [Datasets](#datasets) |  |
@@ -41,9 +39,6 @@ Contributions welcome! Please follow the [contributing guidelines](https://githu
 | [romitask](https://github.com/romi/romitask) ![GitHub Repo stars](https://img.shields.io/github/stars/romi/romitask?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/romi/romitask) | ROMI task runner, a Luigi based task pipeline. |
 | [rosys](https://github.com/zauberzeug/rosys) ![GitHub Repo stars](https://img.shields.io/github/stars/zauberzeug/rosys?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/zauberzeug/rosys) | Asynchronous Python framework for web GUI and state handling on mobile robots, used for field rovers. |
 | [Sowbot](https://github.com/Agroecology-Lab/feldfreund_devkit_ros) ![GitHub Repo stars](https://img.shields.io/github/stars/Agroecology-Lab/feldfreund_devkit_ros?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Agroecology-Lab/feldfreund_devkit_ros) | Line-following sowing and weeding robot with some web UI tools. |
-
-## Calculators
-
 
 ## Climate, Environment and Weather
 
@@ -99,7 +94,6 @@ Contributions welcome! Please follow the [contributing guidelines](https://githu
 | [AgIsoDDOPGenerator](https://github.com/Open-Agriculture/AgIsoDDOPGenerator) ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoDDOPGenerator?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoDDOPGenerator) | Free ISO11783 DDOP editor based on AgIsoStack++, C++. |
 | [AgIsoDevelopmentTools](https://github.com/Open-Agriculture/AgIsoDevelopmentTools) ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoDevelopmentTools?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoDevelopmentTools) | AgIso development tools, C++. |
 | [AgIsoStack-plus-plus](https://github.com/Open-Agriculture/AgIsoStack-plus-plus) ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoStack-plus-plus?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoStack-plus-plus) | Free open-source C++ ISOBUS library (ISO11783/J1939 CAN stack), MIT. |
-| [AgIsoStack-rs](https://github.com/Open-Agriculture/AgIsoStack-rs) ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoStack-rs?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoStack-rs) | Rust implementation of the ISO11783 (ISOBUS) and J1939 protocols. |
 | [AgIsoTerminalDesigner](https://github.com/Open-Agriculture/AgIsoTerminalDesigner) ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoTerminalDesigner?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoTerminalDesigner) | Experimental GUI for designing and modifying VT object pools, Rust. |
 | [AgIsoVirtualTerminal](https://github.com/Open-Agriculture/AgIsoVirtualTerminal) ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoVirtualTerminal?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoVirtualTerminal) | Experimental ISO11783-6 Virtual Terminal (VT) server GUI based on AgIsoStack++, C++. |
 | [ar2](https://github.com/agstack/ar2) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/ar2?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/ar2) | Asset Registry 2: hub and spoke model. |
@@ -108,7 +102,7 @@ Contributions welcome! Please follow the [contributing guidelines](https://githu
 | [Botanica](https://github.com/Michael-A-Kuykendall/botanica) ![GitHub Repo stars](https://img.shields.io/github/stars/Michael-A-Kuykendall/botanica?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Michael-A-Kuykendall/botanica) | Rust crate for botanical data management with taxonomic hierarchy, cultivation tracking and Darwin Core compliance. |
 | [cli](https://github.com/OADA/cli) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/cli?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/cli) | Pipeable OADA CLI client. |
 | [cotton-gin-data-plugin](https://github.com/AgGateway-ADAPT/cotton-gin-data-plugin) ![GitHub Repo stars](https://img.shields.io/github/stars/AgGateway-ADAPT/cotton-gin-data-plugin?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/AgGateway-ADAPT/cotton-gin-data-plugin) | ADAPT Framework import-only plugin for cotton gin data, developed with Cotton Inc., C#. |
-| [Fiware AgriFood](https://www.fiware.org/community/smart-agrifood/) ([Smart Data Models organisation](https://github.com/smart-data-models)) | Open source data standards and IoT framework for connecting farm systems, part of the larger Fiware.org project. |
+| [dataModel.Agrifood](https://github.com/smart-data-models/dataModel.Agrifood) ![GitHub Repo stars](https://img.shields.io/github/stars/smart-data-models/dataModel.Agrifood?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/smart-data-models/dataModel.Agrifood) | Smart Data Models for agrifood: harmonised schemas for farms, parcels, crops, operations and greenhouse records. |
 | [formats](https://github.com/OADA/formats) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/formats?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/formats) | Simplified approach to OADA formats using JSON Schema. |
 | [ISOv4Plugin](https://github.com/AgGateway-ADAPT/ISOv4Plugin) ![GitHub Repo stars](https://img.shields.io/github/stars/AgGateway-ADAPT/ISOv4Plugin?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/AgGateway-ADAPT/ISOv4Plugin) | ADAPT Framework plugin for ISOXML (ISO11783-10), C#. |
 | [MyJohnDeereAPI-OAuth2-Java-Example](https://github.com/JohnDeere/MyJohnDeereAPI-OAuth2-Java-Example) ![GitHub Repo stars](https://img.shields.io/github/stars/JohnDeere/MyJohnDeereAPI-OAuth2-Java-Example?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/JohnDeere/MyJohnDeereAPI-OAuth2-Java-Example) | Java MyJohnDeere API client example. |
@@ -146,7 +140,6 @@ Contributions welcome! Please follow the [contributing guidelines](https://githu
 | [OpenAgri-FarmCalendar](https://github.com/agstack/OpenAgri-FarmCalendar) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/OpenAgri-FarmCalendar?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/OpenAgri-FarmCalendar) | Digital farm calendar for operations, observations, parcels and assets. |
 | [OpenAgri-ReportingService](https://github.com/agstack/OpenAgri-ReportingService) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/OpenAgri-ReportingService?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/OpenAgri-ReportingService) | PDF report generation for agricultural data visualisation. |
 | [Plant-it](https://github.com/MDeLuise/plant-it) ![GitHub Repo stars](https://img.shields.io/github/stars/MDeLuise/plant-it?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/MDeLuise/plant-it) | Self-hosted gardening companion app. |
-| [Tania](https://github.com/Tanibox/tania-core) ![GitHub Repo stars](https://img.shields.io/github/stars/Tanibox/tania-core?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Tanibox/tania-core) | Free and open source farming management system built with Go and Vue.js. |
 | [tracefoodchain](https://github.com/agstack/tracefoodchain) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/tracefoodchain?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/tracefoodchain) | Flutter app and web app for tracing goods along food production chains. |
 
 ## Geospatial and GIS
@@ -176,7 +169,6 @@ Contributions welcome! Please follow the [contributing guidelines](https://githu
 | [AgOpenGPS](https://github.com/AgOpenGPS-Official/AgOpenGPS) ![GitHub Repo stars](https://img.shields.io/github/stars/AgOpenGPS-Official/AgOpenGPS?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/AgOpenGPS-Official/AgOpenGPS) | Precision mapping and section control software. |
 | [Farm Hack](https://farmhack.org/tools) | Worldwide community of farmers who build and modify their own tools. |
 | [Farm-Data-Relay-System](https://github.com/timmbogner/Farm-Data-Relay-System) ![GitHub Repo stars](https://img.shields.io/github/stars/timmbogner/Farm-Data-Relay-System?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/timmbogner/Farm-Data-Relay-System) | Transports sensor data in remote areas over ESP-NOW, LoRa and other protocols, without WiFi. |
-| [Open Agriculture Foundation](https://github.com/OpenAgricultureFoundation) | Open source technologies for transparency, networked experimentation, education and hyper-local production. |
 | [Open hydroponics](https://openhydroponics.com/) | Fully automated hydroponic OS. |
 | [OpenWeedLocator](https://github.com/geezacoleman/OpenWeedLocator) ![GitHub Repo stars](https://img.shields.io/github/stars/geezacoleman/OpenWeedLocator?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/geezacoleman/OpenWeedLocator) | Low-cost, image-based weed detection device for in-crop and fallow scenarios. |
 | [romi-bldc-controller](https://github.com/romi/romi-bldc-controller) ![GitHub Repo stars](https://img.shields.io/github/stars/romi/romi-bldc-controller?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/romi/romi-bldc-controller) | Arduino firmware to control brushless motors, based on SimpleFOC. |
@@ -197,7 +189,6 @@ Contributions welcome! Please follow the [contributing guidelines](https://githu
 | [agridat](https://github.com/kwstat/agridat) ![GitHub Repo stars](https://img.shields.io/github/stars/kwstat/agridat?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/kwstat/agridat) | R package with an extensive collection of datasets from agricultural experiments. |
 | [AgriQuant-AI](https://github.com/AgriQuantAI/AgriQuant-AI) ![GitHub Repo stars](https://img.shields.io/github/stars/AgriQuantAI/AgriQuant-AI?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/AgriQuantAI/AgriQuant-AI) | AI-powered weather intelligence for agricultural commodity futures, Python. |
 | [AI Segmentation](https://plugins.qgis.org/plugins/AI_Segmentation) | QGIS plugin by TerraLab for AI-based segmentation. |
-| [dtw](https://github.com/romi/dtw) ![GitHub Repo stars](https://img.shields.io/github/stars/romi/dtw?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/romi/dtw) | Dynamic time warping algorithms. |
 | [FarmVibes.AI](https://github.com/microsoft/farmvibes-ai) ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/farmvibes-ai?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/microsoft/farmvibes-ai) | Multimodal geospatial ML models for agriculture and sustainability. |
 | [palefire](https://github.com/agstack/palefire) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/palefire?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/palefire) | LLM and knowledge graph integration framework. |
 | [PlantCV](https://github.com/danforthcenter/plantcv) ![GitHub Repo stars](https://img.shields.io/github/stars/danforthcenter/plantcv?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/danforthcenter/plantcv) | Plant phenotyping software using computer vision. |
