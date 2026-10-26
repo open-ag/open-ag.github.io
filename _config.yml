@@ -1,0 +1,5 @@
+remote_theme: pages-themes/primer
+plugins:
+  - jekyll-remote-theme
+title: Awesome Agriculture
+description: Curated open source technology for agriculture, farming and gardening
