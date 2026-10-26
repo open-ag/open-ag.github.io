@@ -13,7 +13,7 @@ Contributions welcome! Please follow the [contributing guidelines](https://githu
 | [Climate, Environment and Weather](#climate-environment-and-weather) | |
 | [Crop Modelling, Phenotyping and Pathology](#crop-modelling-phenotyping-and-pathology) | |
 | [Datasets](#datasets) | |
-| [Data Standardisation, Interoperability and APIs](#data-standardisation-interoperability-and-apis) | [AgStack](#agstack) |
+| [Data Standardisation, Interoperability and APIs](#data-standardisation-interoperability-and-apis) | [AgStack](#agstack) · [OADA](#oada) · [Open-Agriculture](#open-agriculture) |
 | [Farm Management Systems and Record Keeping](#farm-management-systems-and-record-keeping) | |
 | [Geospatial and GIS](#geospatial-and-gis) | [GIS Resources](#gis-resources) · [GIS Platforms](#gis-platforms) · [Shapefiles](#shapefiles) |
 | [IoT, Hardware](#iot-hardware) | |
@@ -117,8 +117,8 @@ Contributions welcome! Please follow the [contributing guidelines](https://githu
 | [MyJohnDeereAPI-OAuth2-Java-Example](https://github.com/JohnDeere/MyJohnDeereAPI-OAuth2-Java-Example) ![GitHub Repo stars](https://img.shields.io/github/stars/JohnDeere/MyJohnDeereAPI-OAuth2-Java-Example?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/JohnDeere/MyJohnDeereAPI-OAuth2-Java-Example) | Java MyJohnDeere API client example. |
 | [MyJohnDeereAPI-OAuth2-NodeJS-Example](https://github.com/JohnDeere/MyJohnDeereAPI-OAuth2-NodeJS-Example) ![GitHub Repo stars](https://img.shields.io/github/stars/JohnDeere/MyJohnDeereAPI-OAuth2-NodeJS-Example?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/JohnDeere/MyJohnDeereAPI-OAuth2-NodeJS-Example) | Node.js MyJohnDeere API client example. |
 | [MyJohnDeereAPI-OAuth2-Python-Example](https://github.com/JohnDeere/MyJohnDeereAPI-OAuth2-Python-Example) ![GitHub Repo stars](https://img.shields.io/github/stars/JohnDeere/MyJohnDeereAPI-OAuth2-Python-Example?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/JohnDeere/MyJohnDeereAPI-OAuth2-Python-Example) | Python MyJohnDeere API client example. |
-| [Open Ag Data Alliance](https://github.com/oada) | Open project for interoperability, security and privacy of agricultural data (OADA). |
-| [Open-Agriculture](https://github.com/Open-Agriculture) | Open source ISOBUS (ISO 11783) tools: AgIsoStack++ C++ library, Virtual Terminal, DDOP editor and VT object pool designer. |
+| [Open Ag Data Alliance](https://github.com/oada) | Open project for interoperability, security and privacy of agricultural data (OADA). See [OADA](#oada) below for active repositories. |
+| [Open-Agriculture](https://github.com/Open-Agriculture) | Open source ISOBUS (ISO 11783) tools: AgIsoStack++ C++ library, Virtual Terminal, DDOP editor and VT object pool designer. See [Open-Agriculture](#open-agriculture) below for active repositories. |
 | [OpenTeam](https://openteam.community/) | Open technology ecosystem for agricultural management. |
 | [SampleData](https://github.com/JohnDeere/SampleData) ![GitHub Repo stars](https://img.shields.io/github/stars/JohnDeere/SampleData?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/JohnDeere/SampleData) | Sample datacards, shapefiles and other files for testing. |
 | [SencropAPI-JavaScript-Client](https://github.com/sencrop/sencrop-js-api-client) ![GitHub Repo stars](https://img.shields.io/github/stars/sencrop/sencrop-js-api-client?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/sencrop/sencrop-js-api-client) | JavaScript client to read and manage Sencrop weather stations. |
@@ -189,6 +189,36 @@ Contributions welcome! Please follow the [contributing guidelines](https://githu
 | :--- | :--- |
 | [palefire](https://github.com/agstack/palefire) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/palefire?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/palefire) | LLM and knowledge graph integration framework. |
 | [semantic-croissant](https://github.com/agstack/semantic-croissant) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/semantic-croissant?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/semantic-croissant) | Semantic Croissant infrastructure, forked from codata/semantic-croissant. |
+
+### OADA
+
+> Repositories from [github.com/OADA](https://github.com/OADA) updated since 26 October 2025. Older ones are left out.
+
+| Project Name | Description |
+| :--- | :--- |
+| [server](https://github.com/OADA/server) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/server?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/server) | Reference implementation of an OADA-conformant API server, TypeScript. |
+| [formats](https://github.com/OADA/formats) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/formats?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/formats) | Simplified approach to OADA formats using JSON Schema. |
+| [operators-module](https://github.com/OADA/operators-module) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/operators-module?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/operators-module) | Operators module, JavaScript. |
+| [fields-module](https://github.com/OADA/fields-module) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/fields-module?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/fields-module) | Module for syncing fields stored on an OADA-compliant server into a cerebral.js application. |
+| [oada-cache](https://github.com/OADA/oada-cache) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/oada-cache?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/oada-cache) | OADA cache library, JavaScript. |
+| [cerebral-module](https://github.com/OADA/cerebral-module) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/cerebral-module?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/cerebral-module) | Cerebral module for OADA, JavaScript. |
+| [oada-cache-overmind](https://github.com/OADA/oada-cache-overmind) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/oada-cache-overmind?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/oada-cache-overmind) | OADA cache for Overmind, JavaScript. |
+| [oada-error-js](https://github.com/OADA/oada-error-js) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/oada-error-js?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/oada-error-js) | OADA standard error middleware. |
+| [oadaify](https://github.com/OADA/oadaify) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/oadaify?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/oadaify) | Make OADA data nicer to work with in JS/TS. |
+| [cli](https://github.com/OADA/cli) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/cli?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/cli) | Pipeable OADA CLI client. |
+
+### Open-Agriculture
+
+> Repositories from [github.com/Open-Agriculture](https://github.com/Open-Agriculture) updated since 26 October 2025. Older ones are left out.
+
+| Project Name | Description |
+| :--- | :--- |
+| [AgIsoVirtualTerminal](https://github.com/Open-Agriculture/AgIsoVirtualTerminal) ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoVirtualTerminal?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoVirtualTerminal) | Experimental ISO11783-6 Virtual Terminal (VT) server GUI based on AgIsoStack++, C++. |
+| [AgIsoStack-plus-plus](https://github.com/Open-Agriculture/AgIsoStack-plus-plus) ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoStack-plus-plus?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoStack-plus-plus) | Free open-source C++ ISOBUS library (ISO11783/J1939 CAN stack), MIT. |
+| [AgIsoTerminalDesigner](https://github.com/Open-Agriculture/AgIsoTerminalDesigner) ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoTerminalDesigner?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoTerminalDesigner) | Experimental GUI for designing and modifying VT object pools, Rust. |
+| [AgIsoStack-rs](https://github.com/Open-Agriculture/AgIsoStack-rs) ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoStack-rs?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoStack-rs) | Rust implementation of the ISO11783 (ISOBUS) and J1939 protocols. |
+| [AgIsoDDOPGenerator](https://github.com/Open-Agriculture/AgIsoDDOPGenerator) ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoDDOPGenerator?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoDDOPGenerator) | Free ISO11783 DDOP editor based on AgIsoStack++, C++. |
+| [AgIsoDevelopmentTools](https://github.com/Open-Agriculture/AgIsoDevelopmentTools) ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoDevelopmentTools?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoDevelopmentTools) | AgIso development tools, C++. |
 
 ## Farm Management Systems and Record Keeping
 
