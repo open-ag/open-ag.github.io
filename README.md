@@ -1,7 +1,8 @@
-> [![Awesome list badge](https://awesome.re/badge.svg)](https://awesome.re) A curated list of awesome open source technology for agriculture, farming and gardening. [Pull requests welcome!](https://github.com/samuk/awesome-agriculture)
+> [![Awesome list badge](https://awesome.re/badge.svg)](https://awesome.re) A curated list of awesome open source technology for agriculture, farming and gardening. [Pull requests welcome!](https://github.com/beaorn/awesome-agriculture)
 
+[Agriculture](https://en.wikipedia.org/wiki/Agriculture) is the science and art of cultivating plants and livestock for food and materials. This list covers open source robotics, hardware, data, modelling and software for farms and growers.
 
-Contributions welcome! Please follow the [contributing guidelines](https://github.com/samuk/awesome-agriculture/blob/master/contributing.md). Repos not updated in last 12 months are in [LEGACY](https://github.com/samuk/awesome-agriculture/blob/master/LEGACY.md)
+Contributions welcome! Please follow the [contributing guidelines](https://github.com/beaorn/awesome-agriculture/blob/master/contributing.md).
 
 ## Contents
 
@@ -25,6 +26,10 @@ Contributions welcome! Please follow the [contributing guidelines](https://githu
 
 | Project Name | Description |
 | :--- | :--- |
+| [Agtonomy](https://github.com/agtonomy) | Commercial autonomy company. `trellis` is a non-ROS robot middleware. |
+| [Bonsai Robotics](https://github.com/BonsaiRobotics) | Amiga SDK, GNSS drivers, drive-by-wire kit and `rosbag2` handling, ROS 2. |
+| [Earth Rover](https://github.com/earthrover) | OpenER, an open-source ROS 1 farm robot with mechanical design, plus `robot_localization` EKF config and an OpenCV/PCL vision pipeline. |
+| [farm-ng](https://github.com/farm-ng) | Open dev kit, SDK and ROS bridges for the Amiga electric farm rover. |
 | [farmbot-arduino-firmware](https://github.com/FarmBot/farmbot-arduino-firmware) ![GitHub Repo stars](https://img.shields.io/github/stars/FarmBot/farmbot-arduino-firmware?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/FarmBot/farmbot-arduino-firmware) | Arduino firmware executing g-code like commands over serial to move the FarmBot and operate the tool mount. |
 | [farmbot-js](https://github.com/FarmBot/farmbot-js) ![GitHub Repo stars](https://img.shields.io/github/stars/FarmBot/farmbot-js?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/FarmBot/farmbot-js) | JavaScript wrapper for FarmBot's authentication and RPC instructions. |
 | [farmbot-py](https://github.com/FarmBot/farmbot-py) ![GitHub Repo stars](https://img.shields.io/github/stars/FarmBot/farmbot-py?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/FarmBot/farmbot-py) | Authentication and communication utilities for FarmBot, Python. |
@@ -33,12 +38,15 @@ Contributions welcome! Please follow the [contributing guidelines](https://githu
 | [farmbot_os](https://github.com/FarmBot/farmbot_os) ![GitHub Repo stars](https://img.shields.io/github/stars/FarmBot/farmbot_os?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/FarmBot/farmbot_os) | Embedded OS handling motor axes, watering tools and sensors on FarmBot hardware. |
 | [feldfreund_devkit](https://github.com/zauberzeug/feldfreund_devkit) ![GitHub Repo stars](https://img.shields.io/github/stars/zauberzeug/feldfreund_devkit?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/zauberzeug/feldfreund_devkit) | Development platform for autonomous weeding. |
 | [Fields2Cover](https://github.com/Fields2Cover/Fields2Cover) ![GitHub Repo stars](https://img.shields.io/github/stars/Fields2Cover/Fields2Cover?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Fields2Cover/Fields2Cover) | Robust and efficient coverage paths for autonomous agricultural vehicles. |
+| [JABAS.AI](https://github.com/jabasai) | ROS 2 repositories including graph-based topological navigation for crop-row layouts. |
 | [librcom](https://github.com/romi/librcom) ![GitHub Repo stars](https://img.shields.io/github/stars/romi/librcom?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/romi/librcom) | ROMI rcom library, C++. |
 | [lizard](https://github.com/zauberzeug/lizard) ![GitHub Repo stars](https://img.shields.io/github/stars/zauberzeug/lizard?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/zauberzeug/lizard) | Domain-specific language for real-time motor control and E-stop logic on microcontrollers. |
 | [romi-apps](https://github.com/romi/romi-apps) ![GitHub Repo stars](https://img.shields.io/github/stars/romi/romi-apps?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/romi/romi-apps) | Applications for the ROMI system: CNC, camera, gimbal, cablebot, rover. |
 | [romitask](https://github.com/romi/romitask) ![GitHub Repo stars](https://img.shields.io/github/stars/romi/romitask?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/romi/romitask) | ROMI task runner, a Luigi based task pipeline. |
 | [rosys](https://github.com/zauberzeug/rosys) ![GitHub Repo stars](https://img.shields.io/github/stars/zauberzeug/rosys?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/zauberzeug/rosys) | Asynchronous Python framework for web GUI and state handling on mobile robots, used for field rovers. |
+| [Sabanto](https://github.com/sabantoag) | Historic ROS 1 RTK-GPS driver patterns (u-blox F9P, NTRIP) and a GPS goal server. |
 | [Sowbot](https://github.com/Agroecology-Lab/feldfreund_devkit_ros) ![GitHub Repo stars](https://img.shields.io/github/stars/Agroecology-Lab/feldfreund_devkit_ros?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Agroecology-Lab/feldfreund_devkit_ros) | Line-following sowing and weeding robot with some web UI tools. |
+| [Twisted Fields](https://github.com/Twisted-Fields) | Acorn open-hardware precision farming rover: KiCad PCBs and RP2040 motor controller firmware. |
 
 ## Climate, Environment and Weather
 
@@ -102,6 +110,7 @@ Contributions welcome! Please follow the [contributing guidelines](https://githu
 | [Botanica](https://github.com/Michael-A-Kuykendall/botanica) ![GitHub Repo stars](https://img.shields.io/github/stars/Michael-A-Kuykendall/botanica?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Michael-A-Kuykendall/botanica) | Rust crate for botanical data management with taxonomic hierarchy, cultivation tracking and Darwin Core compliance. |
 | [cli](https://github.com/OADA/cli) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/cli?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/cli) | Pipeable OADA CLI client. |
 | [cotton-gin-data-plugin](https://github.com/AgGateway-ADAPT/cotton-gin-data-plugin) ![GitHub Repo stars](https://img.shields.io/github/stars/AgGateway-ADAPT/cotton-gin-data-plugin?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/AgGateway-ADAPT/cotton-gin-data-plugin) | ADAPT Framework import-only plugin for cotton gin data, developed with Cotton Inc., C#. |
+| [Data Food Consortium](https://github.com/datafoodconsortium) | Open data standard (ontology, JSON-LD, LDP, OIDC) for interoperability between platforms used by producers in short food supply chains, with TypeScript, Ruby and PHP connectors. |
 | [dataModel.Agrifood](https://github.com/smart-data-models/dataModel.Agrifood) ![GitHub Repo stars](https://img.shields.io/github/stars/smart-data-models/dataModel.Agrifood?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/smart-data-models/dataModel.Agrifood) | Smart Data Models for agrifood: harmonised schemas for farms, parcels, crops, operations and greenhouse records. |
 | [formats](https://github.com/OADA/formats) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/formats?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/formats) | Simplified approach to OADA formats using JSON Schema. |
 | [ISOv4Plugin](https://github.com/AgGateway-ADAPT/ISOv4Plugin) ![GitHub Repo stars](https://img.shields.io/github/stars/AgGateway-ADAPT/ISOv4Plugin?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/AgGateway-ADAPT/ISOv4Plugin) | ADAPT Framework plugin for ISOXML (ISO11783-10), C#. |
@@ -126,10 +135,10 @@ Contributions welcome! Please follow the [contributing guidelines](https://githu
 | Project Name | Description |
 | :--- | :--- |
 | [AgriOS](https://github.com/agstack/AgriOS) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/AgriOS?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/AgriOS) | Odoo 18 farm management addons: farmers, plots, trade and training (AGPL-3). |
+| [Canopi](https://github.com/opencanopi/canopi) ![GitHub Repo stars](https://img.shields.io/github/stars/opencanopi/canopi?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/opencanopi/canopi) | Agroecological design for permaculture, syntropic agriculture and food forests, with a plant catalog and geolocated map canvas. Rust and TypeScript, AGPL-3.0. |
 | [Ekylibre](https://github.com/ekylibre/ekylibre) ![GitHub Repo stars](https://img.shields.io/github/stars/ekylibre/ekylibre?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/ekylibre/ekylibre) | Farm management information system for farmers and small enterprises, Ruby on Rails and PostgreSQL/PostGIS. |
 | [farmOS](https://github.com/farmOS/farmOS) ![GitHub Repo stars](https://img.shields.io/github/stars/farmOS/farmOS?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/farmOS/farmOS) | Web-based farm record keeping application built with Drupal and PHP. |
 | [GrowerHub](https://github.com/aspinozaxxx-lab/growerhub) ![GitHub Repo stars](https://img.shields.io/github/stars/aspinozaxxx-lab/growerhub?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/aspinozaxxx-lab/growerhub) | Greenhouse and small-farm management: Zigbee2MQTT monitoring, plant and watering journals, lighting and irrigation automation. |
-| [GrowGood](https://gitlab.com/growgood) | Farm management platform using open standards such as ValueFlows and JSON-LD to track and share interoperable data across farms and marketplaces. |
 | [HortusFox](https://github.com/danielbrendel/hortusfox-web) ![GitHub Repo stars](https://img.shields.io/github/stars/danielbrendel/hortusfox-web?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/danielbrendel/hortusfox-web) | Self-hosted, collaborative plant management and journaling app. |
 | [inatrace](https://github.com/agstack/inatrace) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/inatrace?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/inatrace) | Meta repository linking the INATrace backend, frontend, mobile and blockchain components; blockchain-based track and trace for supply chains. |
 | [inatrace-backend](https://github.com/agstack/inatrace-backend) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/inatrace-backend?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/inatrace-backend) | Java/Spring backend. |
