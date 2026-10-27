@@ -2,7 +2,7 @@
 
 [Agriculture](https://en.wikipedia.org/wiki/Agriculture) is the science and art of cultivating plants and livestock for food and materials. This list covers open source robotics, hardware, data, modelling and software for farms and growers.
 
-Contributions welcome! Please follow the [contributing guidelines](https://github.com/beaorn/awesome-agriculture/blob/master/contributing.md). Repos updated over a year ago can be found in [Legacy](https://github.com/open-ag/open-ag.github.io/blob/master/LEGACY.md)
+Contributions welcome! Please follow the [contributing guidelines](https://github.com/open-ag/awesome-agriculture/blob/master/contributing.md). Repos updated over a year ago can be found in [Legacy](https://github.com/open-ag/open-ag.github.io/blob/master/LEGACY.md) this is a fork of [Bryce Johnson list](https://github.com/brycejohnston/awesome-agriculture)
 
 ## Contents
 
