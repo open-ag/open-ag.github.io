@@ -8,17 +8,130 @@ Contributions welcome! Please follow the [contributing guidelines](https://githu
 
 | Section | Subsections |
 | :--- | :--- |
+| [Data Standardisation, Interoperability and APIs](#data-standardisation-interoperability-and-apis) | [Data standards compared](#data-standards-compared) · [OADA](#oada-formats-and-api-tooling) · [OpenAgri services](#openagri-services) · [AgStack registries](#agstack-registries-and-infrastructure) · [ADAPT plugins](#adapt-framework-plugins-and-tools) · [ISOBUS](#isobus-iso-11783) · [Vendor API examples](#vendor-api-examples) · [Other tools](#other-tools-and-communities) |
+| [Farm Management Systems and Record Keeping](#farm-management-systems-and-record-keeping) |  |
 | [Automation and Robotics](#automation-and-robotics) |  |
 | [Climate, Environment and Weather](#climate-environment-and-weather) |  |
 | [Crop Modelling, Phenotyping and Pathology](#crop-modelling-phenotyping-and-pathology) |  |
 | [Datasets](#datasets) |  |
-| [Data Standardisation, Interoperability and APIs](#data-standardisation-interoperability-and-apis) |  |
-| [Farm Management Systems and Record Keeping](#farm-management-systems-and-record-keeping) |  |
 | [Geospatial and GIS](#geospatial-and-gis) | [GIS Resources](#gis-resources) · [GIS Platforms](#gis-platforms) · [Shapefiles](#shapefiles) |
 | [IoT, Hardware](#iot-hardware) |  |
 | [Knowledgebases and Learning Resources](#knowledgebases-and-learning-resources) |  |
 | [Machine Learning and AI](#machine-learning-and-ai) |  |
 | [Remote Sensing and Imagery](#remote-sensing-and-imagery) |  |
+
+## Data Standardisation, Interoperability and APIs
+
+### Data standards compared
+
+Three standards cover the farm side and one covers trade. SDM is generic IoT-style entities, ADAPT is machinery and field operations, OCSM is a semantic ontology, and DFC is supply-chain concepts. Overlap between them is small, so this is a choice of fit, not a ranking.
+
+| Project | Scope | Format | Users |
+| :--- | :--- | :--- | :--- |
+| [dataModel.Agrifood](https://github.com/smart-data-models/dataModel.Agrifood)<br>![GitHub Repo stars](https://img.shields.io/github/stars/smart-data-models/dataModel.Agrifood?style=social) ![GitHub last commit](https://img.shields.io/github/last-commit/smart-data-models/dataModel.Agrifood)<br>Licence: none shown on repo page | Harmonised schemas for farms, parcels, crops, operations and greenhouse records | JSON Schema, JSON-LD context, NGSI-LD oriented | Run by the [Smart Data Models](https://github.com/smart-data-models) programme, led by [FIWARE Foundation](https://www.fiware.org), [TM Forum](https://www.tmforum.org), [IUDX](https://iudx.org.in) and [OASC](https://oascities.org). More than 80 organisations collaborate across all domains. The Agrifood README names UCO and SensoWave (Animal model, IoF2020 ShareBeef use case) |
+| [Standard](https://github.com/AgGateway-ADAPT/Standard)<br>![GitHub Repo stars](https://img.shields.io/github/stars/AgGateway-ADAPT/Standard?style=social) ![GitHub last commit](https://img.shields.io/github/last-commit/AgGateway-ADAPT/Standard)<br>Licence: MIT | Farm reference data, field operations and geospatial layers, for B2B data sharing | JSON Schema | Backed by [AgGateway](https://www.aggateway.org) (ADAPT Oversight Committee). [AEF](https://www.aef-online.org) (the ISOBUS body) cooperates with AgGateway, with AEM, VDMA, AGCO, CLAAS, CNH and John Deere behind AEF. Cotton Inc. co-developed the cotton gin plugin |
+| [OpenAgri-OCSM](https://github.com/agstack/OpenAgri-OCSM)<br>![GitHub Repo stars](https://img.shields.io/github/stars/agstack/OpenAgri-OCSM?style=social) ![GitHub last commit](https://img.shields.io/github/last-commit/agstack/OpenAgri-OCSM)<br>Licence: EUPL-1.2 (repo), CC BY 4.0 (model, per README) | OpenAgri Common Semantic Model, an ontology built on AIM and Ploutos CSM | RDF/OWL, JSON-LD, JSON Schema | Hosted by the [AgStack Foundation](https://www.linuxfoundation.org/press/agstack-becomes-key-player-in-openagri) (Linux Foundation). Developed in the [OpenAgri project](https://cordis.europa.eu/project/id/101134083) (Horizon Europe): [Maastricht University](https://www.maastrichtuniversity.nl) coordinates a consortium of 18 partners, including SCiO and Łukasiewicz-PIT. Built on DEMETER AIM and the Ploutos model |
+| [Data Food Consortium](https://github.com/datafoodconsortium/standard)<br>![GitHub Repo stars](https://img.shields.io/github/stars/datafoodconsortium/standard?style=social) ![GitHub last commit](https://img.shields.io/github/last-commit/datafoodconsortium/standard)<br>Licence: AGPL-3 (ontology and UML repos; standard repo not checked) | Product, order and agent concepts for short food supply chains (trade, not production) | OWL/RDF ontology, JSON-LD, LDP endpoints | French multi-stakeholder initiative, started in 2017 by local food platforms: Open Food France, Cagette.net, Panier Local, La Ruche Qui Dit Oui, Ekylibre and Sony CSL. Later participants listed include Socleo, Elzeard, Mycelium, INRAE and Open Food Facts |
+
+### OADA: formats and API tooling
+
+The Open Ag Data Alliance, led by the Purdue Open Ag Technology Group, defines an API for sharing farm data plus JSON Schema formats for what travels over it. It is transport-oriented, not a domain model, and its backing is mostly legacy. The repos below are the formats, a reference server and client tools.
+
+| Project | Description | Stars | Last commit |
+| :--- | :--- | :--- | :--- |
+| [formats](https://github.com/OADA/formats) | Simplified approach to OADA formats using JSON Schema | ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/formats?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/OADA/formats) |
+| [server](https://github.com/OADA/server) | Reference implementation of an OADA-conformant API server, TypeScript | ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/server?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/OADA/server) |
+| [cli](https://github.com/OADA/cli) | Pipeable OADA CLI client | ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/cli?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/OADA/cli) |
+| [oada-error-js](https://github.com/OADA/oada-error-js) | OADA standard error middleware | ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/oada-error-js?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/OADA/oada-error-js) |
+| [oadaify](https://github.com/OADA/oadaify) | Make OADA data nicer to work with in JS/TS | ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/oadaify?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/OADA/oadaify) |
+
+### OpenAgri services
+
+OpenAgri is a Horizon Europe project (18 partners, coordinated by Maastricht University) building open-source farm management tools. OCSM is its data model. These repos are the services around it, so they only matter if you adopt the OpenAgri stack.
+
+| Project | Description | Stars | Last commit |
+| :--- | :--- | :--- | :--- |
+| [OpenAgri-GateKeeper](https://github.com/agstack/OpenAgri-GateKeeper) | JWT-based authentication and access proxy | ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/OpenAgri-GateKeeper?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/agstack/OpenAgri-GateKeeper) |
+| [OpenAgri-Bootstrap-Deployment](https://github.com/agstack/OpenAgri-Bootstrap-Deployment) | Modular configuration and deployment of all OpenAgri services | ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/OpenAgri-Bootstrap-Deployment?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/agstack/OpenAgri-Bootstrap-Deployment) |
+
+### AgStack registries and infrastructure
+
+AgStack is a Linux Foundation project that hosts shared agricultural infrastructure. The core piece is a registry that gives each field polygon a unique GeoID. The rest is identity, datastore and semantic tooling around it.
+
+| Project | Description | Stars | Last commit |
+| :--- | :--- | :--- | :--- |
+| [asset-registry](https://github.com/agstack/asset-registry) | Registers a geospatial asset (typically a polygon) and returns a unique GeoID; Flask, AR 1.0 | ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/asset-registry?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/agstack/asset-registry) |
+| [user-registry](https://github.com/agstack/user-registry) | User accounts, JWT issuance and API keys for AR 1.0 | ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/user-registry?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/agstack/user-registry) |
+| [ar2](https://github.com/agstack/ar2) | Asset Registry 2: hub and spoke model | ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/ar2?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/agstack/ar2) |
+| [ar2-hub](https://github.com/agstack/ar2-hub) | Hub component for Asset Registry 2 | ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/ar2-hub?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/agstack/ar2-hub) |
+| [pancake](https://github.com/agstack/pancake) | AI-native geospatial datastore and DPI services: field ownership grants as SD-JWT credentials, signed audit ledger, scheduled vendor data ingestion | ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/pancake?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/agstack/pancake) |
+| [semantic-croissant](https://github.com/agstack/semantic-croissant) | Semantic Croissant infrastructure, forked from codata/semantic-croissant | ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/semantic-croissant?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/agstack/semantic-croissant) |
+
+### ADAPT Framework plugins and tools
+
+ADAPT is AgGateway's open-source project: a standard data model plus a plugin framework that converts vendor formats to and from it. These are the plugins and a diagnostic tool, all C#.
+
+| Project | Description | Stars | Last commit |
+| :--- | :--- | :--- | :--- |
+| [ISOv4Plugin](https://github.com/AgGateway-ADAPT/ISOv4Plugin) | ADAPT Framework plugin for ISOXML (ISO11783-10), C# | ![GitHub Repo stars](https://img.shields.io/github/stars/AgGateway-ADAPT/ISOv4Plugin?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/AgGateway-ADAPT/ISOv4Plugin) |
+| [StandardPlugin](https://github.com/AgGateway-ADAPT/StandardPlugin) | ADAPT Framework plugin to convert data to the ADAPT Standard, C# | ![GitHub Repo stars](https://img.shields.io/github/stars/AgGateway-ADAPT/StandardPlugin?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/AgGateway-ADAPT/StandardPlugin) |
+| [cotton-gin-data-plugin](https://github.com/AgGateway-ADAPT/cotton-gin-data-plugin) | ADAPT Framework import-only plugin for cotton gin data, developed with Cotton Inc., C# | ![GitHub Repo stars](https://img.shields.io/github/stars/AgGateway-ADAPT/cotton-gin-data-plugin?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/AgGateway-ADAPT/cotton-gin-data-plugin) |
+| [ADAPT-Visualizer](https://github.com/AgGateway-ADAPT/ADAPT-Visualizer) | Windows Forms diagnostic tool for the ADAPT Framework, C# | ![GitHub Repo stars](https://img.shields.io/github/stars/AgGateway-ADAPT/ADAPT-Visualizer?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/AgGateway-ADAPT/ADAPT-Visualizer) |
+
+### ISOBUS (ISO 11783)
+
+ISO 11783 is the tractor-implement CAN bus standard. Open-Agriculture's AgIso projects are an open-source C++ stack and tooling for it. This is machine connectivity, not a data model, so it only matters if the robot must talk to implements.
+
+| Project | Description | Stars | Last commit |
+| :--- | :--- | :--- | :--- |
+| [AgIsoStack-plus-plus](https://github.com/Open-Agriculture/AgIsoStack-plus-plus) | Free open-source C++ ISOBUS library (ISO11783/J1939 CAN stack), MIT | ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoStack-plus-plus?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoStack-plus-plus) |
+| [AgIsoVirtualTerminal](https://github.com/Open-Agriculture/AgIsoVirtualTerminal) | Experimental ISO11783-6 Virtual Terminal (VT) server GUI based on AgIsoStack++, C++ | ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoVirtualTerminal?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoVirtualTerminal) |
+| [AgIsoTerminalDesigner](https://github.com/Open-Agriculture/AgIsoTerminalDesigner) | Experimental GUI for designing and modifying VT object pools, Rust | ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoTerminalDesigner?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoTerminalDesigner) |
+| [AgIsoDDOPGenerator](https://github.com/Open-Agriculture/AgIsoDDOPGenerator) | Free ISO11783 DDOP editor based on AgIsoStack++, C++ | ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoDDOPGenerator?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoDDOPGenerator) |
+| [AgIsoDevelopmentTools](https://github.com/Open-Agriculture/AgIsoDevelopmentTools) | AgIso development tools, C++ | ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoDevelopmentTools?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoDevelopmentTools) |
+
+### Vendor API examples
+
+Single-vendor sample code: OAuth2 clients for John Deere's API. Useful only if you integrate with Deere's platform.
+
+| Project | Description | Stars | Last commit |
+| :--- | :--- | :--- | :--- |
+| [MyJohnDeereAPI-OAuth2-Java-Example](https://github.com/JohnDeere/MyJohnDeereAPI-OAuth2-Java-Example) | Java MyJohnDeere API client example | ![GitHub Repo stars](https://img.shields.io/github/stars/JohnDeere/MyJohnDeereAPI-OAuth2-Java-Example?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/JohnDeere/MyJohnDeereAPI-OAuth2-Java-Example) |
+| [MyJohnDeereAPI-OAuth2-NodeJS-Example](https://github.com/JohnDeere/MyJohnDeereAPI-OAuth2-NodeJS-Example) | Node.js MyJohnDeere API client example | ![GitHub Repo stars](https://img.shields.io/github/stars/JohnDeere/MyJohnDeereAPI-OAuth2-NodeJS-Example?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/JohnDeere/MyJohnDeereAPI-OAuth2-NodeJS-Example) |
+
+### Other tools and communities
+
+Unrelated one-offs that fit nowhere else: a database engine, a botanical data crate and a community ecosystem.
+
+| Project | Description | Stars | Last commit |
+| :--- | :--- | :--- | :--- |
+| [SawitDB](https://github.com/WowoEngine/SawitDB) | Node.js database engine built for data sovereignty | ![GitHub Repo stars](https://img.shields.io/github/stars/WowoEngine/SawitDB?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/WowoEngine/SawitDB) |
+| [Botanica](https://github.com/Michael-A-Kuykendall/botanica) | Rust crate for botanical data management with taxonomic hierarchy, cultivation tracking and Darwin Core compliance | ![GitHub Repo stars](https://img.shields.io/github/stars/Michael-A-Kuykendall/botanica?style=social) | ![GitHub last commit](https://img.shields.io/github/last-commit/Michael-A-Kuykendall/botanica) |
+| [OpenTeam](https://openteam.community/) | Open technology ecosystem for agricultural management | n/a | n/a |
+
+
+## Farm Management Systems and Record Keeping
+
+| Project Name | Description |
+| :--- | :--- |
+| [HortusFox](https://github.com/danielbrendel/hortusfox-web) ![GitHub Repo stars](https://img.shields.io/github/stars/danielbrendel/hortusfox-web?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/danielbrendel/hortusfox-web) | Self-hosted, collaborative plant management and journaling app. |
+| [farmOS](https://github.com/farmOS/farmOS) ![GitHub Repo stars](https://img.shields.io/github/stars/farmOS/farmOS?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/farmOS/farmOS) | Web-based farm record keeping application built with Drupal and PHP. |
+| [Plant-it](https://github.com/MDeLuise/plant-it) ![GitHub Repo stars](https://img.shields.io/github/stars/MDeLuise/plant-it?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/MDeLuise/plant-it) | Self-hosted gardening companion app. |
+| [Ekylibre](https://github.com/ekylibre/ekylibre) ![GitHub Repo stars](https://img.shields.io/github/stars/ekylibre/ekylibre?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/ekylibre/ekylibre) | Farm management information system for farmers and small enterprises, Ruby on Rails and PostgreSQL/PostGIS. |
+| [LiteFarm](https://github.com/LiteFarmOrg/LiteFarm) ![GitHub Repo stars](https://img.shields.io/github/stars/LiteFarmOrg/LiteFarm?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/LiteFarmOrg/LiteFarm) | Community-led, not-for-profit farm management system. |
+| [OpenAgri-FarmCalendar](https://github.com/agstack/OpenAgri-FarmCalendar) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/OpenAgri-FarmCalendar?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/OpenAgri-FarmCalendar) | Digital farm calendar for operations, observations, parcels and assets. |
+| [inatrace-backend](https://github.com/agstack/inatrace-backend) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/inatrace-backend?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/inatrace-backend) | Java/Spring backend. |
+| [OpenAgri-ReportingService](https://github.com/agstack/OpenAgri-ReportingService) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/OpenAgri-ReportingService?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/OpenAgri-ReportingService) | PDF report generation for agricultural data visualisation. |
+| [GrowerHub](https://github.com/aspinozaxxx-lab/growerhub) ![GitHub Repo stars](https://img.shields.io/github/stars/aspinozaxxx-lab/growerhub?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/aspinozaxxx-lab/growerhub) | Greenhouse and small-farm management: Zigbee2MQTT monitoring, plant and watering journals, lighting and irrigation automation. |
+| [tracefoodchain](https://github.com/agstack/tracefoodchain) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/tracefoodchain?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/tracefoodchain) | Flutter app and web app for tracing goods along food production chains. |
+| [inatrace](https://github.com/agstack/inatrace) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/inatrace?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/inatrace) | Meta repository linking the INATrace backend, frontend, mobile and blockchain components; blockchain-based track and trace for supply chains. |
+| [AgriOS](https://github.com/agstack/AgriOS) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/AgriOS?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/AgriOS) | Odoo 18 farm management addons: farmers, plots, trade and training (AGPL-3). |
+| [Canopi](https://github.com/opencanopi/canopi) ![GitHub Repo stars](https://img.shields.io/github/stars/opencanopi/canopi?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/opencanopi/canopi) | Agroecological design for permaculture, syntropic agriculture and food forests, with a plant catalog and geolocated map canvas. Rust and TypeScript, AGPL-3.0. |
+| [inatrace-coffee-network](https://github.com/agstack/inatrace-coffee-network) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/inatrace-coffee-network?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/inatrace-coffee-network) | Blockchain smart contracts for the coffee supply chain. |
+| [inatrace-frontend](https://github.com/agstack/inatrace-frontend) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/inatrace-frontend?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/inatrace-frontend) | Angular frontend. |
+| [inatrace-mobile](https://github.com/agstack/inatrace-mobile) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/inatrace-mobile?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/inatrace-mobile) | Mobile app for farmer data collection. |
+
+
 
 ## Automation and Robotics
 
@@ -89,63 +202,7 @@ Contributions welcome! Please follow the [contributing guidelines](https://githu
 | [USDA Market Prices](https://github.com/JuanTorresMI/JuanTorresMI.github.io) ![GitHub Repo stars](https://img.shields.io/github/stars/JuanTorresMI/JuanTorresMI.github.io?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/JuanTorresMI/JuanTorresMI.github.io) | Daily boxed beef, pork and fed cattle prices from USDA AMS price reports since 2020, downloadable as CSV. |
 | [VarshaKrishi Field NDVI](https://github.com/tanmaysahare/sentinel2-field-ndvi) ![GitHub Repo stars](https://img.shields.io/github/stars/tanmaysahare/sentinel2-field-ndvi?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/tanmaysahare/sentinel2-field-ndvi) | One year of Sentinel-2 L2A field-mean NDVI for a field near Katol, Nagpur, India, with cloud verdict and haze flag per pass. CSV and JSON, CC BY 4.0. |
 
-## Data Standardisation, Interoperability and APIs
 
-| Project Name | Description |
-| :--- | :--- |
-| [SawitDB](https://github.com/WowoEngine/SawitDB) ![GitHub Repo stars](https://img.shields.io/github/stars/WowoEngine/SawitDB?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/WowoEngine/SawitDB) | Node.js database engine built for data sovereignty. |
-| [AgIsoStack-plus-plus](https://github.com/Open-Agriculture/AgIsoStack-plus-plus) ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoStack-plus-plus?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoStack-plus-plus) | Free open-source C++ ISOBUS library (ISO11783/J1939 CAN stack), MIT. |
-| [AgIsoVirtualTerminal](https://github.com/Open-Agriculture/AgIsoVirtualTerminal) ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoVirtualTerminal?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoVirtualTerminal) | Experimental ISO11783-6 Virtual Terminal (VT) server GUI based on AgIsoStack++, C++. |
-| [AgIsoTerminalDesigner](https://github.com/Open-Agriculture/AgIsoTerminalDesigner) ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoTerminalDesigner?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoTerminalDesigner) | Experimental GUI for designing and modifying VT object pools, Rust. |
-| [ISOv4Plugin](https://github.com/AgGateway-ADAPT/ISOv4Plugin) ![GitHub Repo stars](https://img.shields.io/github/stars/AgGateway-ADAPT/ISOv4Plugin?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/AgGateway-ADAPT/ISOv4Plugin) | ADAPT Framework plugin for ISOXML (ISO11783-10), C#. |
-| [Botanica](https://github.com/Michael-A-Kuykendall/botanica) ![GitHub Repo stars](https://img.shields.io/github/stars/Michael-A-Kuykendall/botanica?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Michael-A-Kuykendall/botanica) | Rust crate for botanical data management with taxonomic hierarchy, cultivation tracking and Darwin Core compliance. |
-| [dataModel.Agrifood](https://github.com/smart-data-models/dataModel.Agrifood) ![GitHub Repo stars](https://img.shields.io/github/stars/smart-data-models/dataModel.Agrifood?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/smart-data-models/dataModel.Agrifood) | Smart Data Models for agrifood: harmonised schemas for farms, parcels, crops, operations and greenhouse records. |
-| [Standard](https://github.com/AgGateway-ADAPT/Standard) ![GitHub Repo stars](https://img.shields.io/github/stars/AgGateway-ADAPT/Standard?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/AgGateway-ADAPT/Standard) | ADAPT Standard: data schema for farm reference data, field operations and geospatial layers, for B2B data sharing. |
-| [AgIsoDDOPGenerator](https://github.com/Open-Agriculture/AgIsoDDOPGenerator) ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoDDOPGenerator?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoDDOPGenerator) | Free ISO11783 DDOP editor based on AgIsoStack++, C++. |
-| [server](https://github.com/OADA/server) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/server?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/server) | Reference implementation of an OADA-conformant API server, TypeScript. |
-| [asset-registry](https://github.com/agstack/asset-registry) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/asset-registry?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/asset-registry) | Registers a geospatial asset (typically a polygon) and returns a unique GeoID; Flask, AR 1.0. |
-| [OpenAgri-GateKeeper](https://github.com/agstack/OpenAgri-GateKeeper) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/OpenAgri-GateKeeper?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/OpenAgri-GateKeeper) | JWT-based authentication and access proxy. |
-| [pancake](https://github.com/agstack/pancake) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/pancake?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/pancake) | AI-native geospatial datastore and DPI services: field ownership grants as SD-JWT credentials, signed audit ledger, scheduled vendor data ingestion. |
-| [ADAPT-Visualizer](https://github.com/AgGateway-ADAPT/ADAPT-Visualizer) ![GitHub Repo stars](https://img.shields.io/github/stars/AgGateway-ADAPT/ADAPT-Visualizer?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/AgGateway-ADAPT/ADAPT-Visualizer) | Windows Forms diagnostic tool for the ADAPT Framework, C#. |
-| [OpenAgri-Bootstrap-Deployment](https://github.com/agstack/OpenAgri-Bootstrap-Deployment) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/OpenAgri-Bootstrap-Deployment?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/OpenAgri-Bootstrap-Deployment) | Modular configuration and deployment of all OpenAgri services. |
-| [OpenAgri-OCSM](https://github.com/agstack/OpenAgri-OCSM) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/OpenAgri-OCSM?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/OpenAgri-OCSM) | OpenAgri Common Semantic Model. |
-| [Data Food Consortium](https://github.com/datafoodconsortium/standard) ![GitHub Repo stars](https://img.shields.io/github/stars/datafoodconsortium/standard?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/datafoodconsortium/standard) | Open data standard (ontology, JSON-LD, LDP, OIDC) for interoperability between platforms used by producers in short food supply chains. |
-| [formats](https://github.com/OADA/formats) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/formats?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/formats) | Simplified approach to OADA formats using JSON Schema. |
-| [MyJohnDeereAPI-OAuth2-Java-Example](https://github.com/JohnDeere/MyJohnDeereAPI-OAuth2-Java-Example) ![GitHub Repo stars](https://img.shields.io/github/stars/JohnDeere/MyJohnDeereAPI-OAuth2-Java-Example?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/JohnDeere/MyJohnDeereAPI-OAuth2-Java-Example) | Java MyJohnDeere API client example. |
-| [MyJohnDeereAPI-OAuth2-NodeJS-Example](https://github.com/JohnDeere/MyJohnDeereAPI-OAuth2-NodeJS-Example) ![GitHub Repo stars](https://img.shields.io/github/stars/JohnDeere/MyJohnDeereAPI-OAuth2-NodeJS-Example?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/JohnDeere/MyJohnDeereAPI-OAuth2-NodeJS-Example) | Node.js MyJohnDeere API client example. |
-| [StandardPlugin](https://github.com/AgGateway-ADAPT/StandardPlugin) ![GitHub Repo stars](https://img.shields.io/github/stars/AgGateway-ADAPT/StandardPlugin?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/AgGateway-ADAPT/StandardPlugin) | ADAPT Framework plugin to convert data to the ADAPT Standard, C#. |
-| [cli](https://github.com/OADA/cli) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/cli?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/cli) | Pipeable OADA CLI client. |
-| [user-registry](https://github.com/agstack/user-registry) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/user-registry?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/user-registry) | User accounts, JWT issuance and API keys for AR 1.0. |
-| [cotton-gin-data-plugin](https://github.com/AgGateway-ADAPT/cotton-gin-data-plugin) ![GitHub Repo stars](https://img.shields.io/github/stars/AgGateway-ADAPT/cotton-gin-data-plugin?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/AgGateway-ADAPT/cotton-gin-data-plugin) | ADAPT Framework import-only plugin for cotton gin data, developed with Cotton Inc., C#. |
-| [AgIsoDevelopmentTools](https://github.com/Open-Agriculture/AgIsoDevelopmentTools) ![GitHub Repo stars](https://img.shields.io/github/stars/Open-Agriculture/AgIsoDevelopmentTools?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/Open-Agriculture/AgIsoDevelopmentTools) | AgIso development tools, C++. |
-| [ar2](https://github.com/agstack/ar2) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/ar2?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/ar2) | Asset Registry 2: hub and spoke model. |
-| [ar2-hub](https://github.com/agstack/ar2-hub) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/ar2-hub?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/ar2-hub) | Hub component for Asset Registry 2. |
-| [oada-error-js](https://github.com/OADA/oada-error-js) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/oada-error-js?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/oada-error-js) | OADA standard error middleware. |
-| [oadaify](https://github.com/OADA/oadaify) ![GitHub Repo stars](https://img.shields.io/github/stars/OADA/oadaify?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/OADA/oadaify) | Make OADA data nicer to work with in JS/TS. |
-| [semantic-croissant](https://github.com/agstack/semantic-croissant) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/semantic-croissant?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/semantic-croissant) | Semantic Croissant infrastructure, forked from codata/semantic-croissant. |
-| [OpenTeam](https://openteam.community/) | Open technology ecosystem for agricultural management. |
-
-
-## Farm Management Systems and Record Keeping
-
-| Project Name | Description |
-| :--- | :--- |
-| [HortusFox](https://github.com/danielbrendel/hortusfox-web) ![GitHub Repo stars](https://img.shields.io/github/stars/danielbrendel/hortusfox-web?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/danielbrendel/hortusfox-web) | Self-hosted, collaborative plant management and journaling app. |
-| [farmOS](https://github.com/farmOS/farmOS) ![GitHub Repo stars](https://img.shields.io/github/stars/farmOS/farmOS?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/farmOS/farmOS) | Web-based farm record keeping application built with Drupal and PHP. |
-| [Plant-it](https://github.com/MDeLuise/plant-it) ![GitHub Repo stars](https://img.shields.io/github/stars/MDeLuise/plant-it?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/MDeLuise/plant-it) | Self-hosted gardening companion app. |
-| [Ekylibre](https://github.com/ekylibre/ekylibre) ![GitHub Repo stars](https://img.shields.io/github/stars/ekylibre/ekylibre?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/ekylibre/ekylibre) | Farm management information system for farmers and small enterprises, Ruby on Rails and PostgreSQL/PostGIS. |
-| [LiteFarm](https://github.com/LiteFarmOrg/LiteFarm) ![GitHub Repo stars](https://img.shields.io/github/stars/LiteFarmOrg/LiteFarm?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/LiteFarmOrg/LiteFarm) | Community-led, not-for-profit farm management system. |
-| [OpenAgri-FarmCalendar](https://github.com/agstack/OpenAgri-FarmCalendar) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/OpenAgri-FarmCalendar?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/OpenAgri-FarmCalendar) | Digital farm calendar for operations, observations, parcels and assets. |
-| [inatrace-backend](https://github.com/agstack/inatrace-backend) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/inatrace-backend?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/inatrace-backend) | Java/Spring backend. |
-| [OpenAgri-ReportingService](https://github.com/agstack/OpenAgri-ReportingService) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/OpenAgri-ReportingService?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/OpenAgri-ReportingService) | PDF report generation for agricultural data visualisation. |
-| [GrowerHub](https://github.com/aspinozaxxx-lab/growerhub) ![GitHub Repo stars](https://img.shields.io/github/stars/aspinozaxxx-lab/growerhub?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/aspinozaxxx-lab/growerhub) | Greenhouse and small-farm management: Zigbee2MQTT monitoring, plant and watering journals, lighting and irrigation automation. |
-| [tracefoodchain](https://github.com/agstack/tracefoodchain) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/tracefoodchain?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/tracefoodchain) | Flutter app and web app for tracing goods along food production chains. |
-| [inatrace](https://github.com/agstack/inatrace) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/inatrace?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/inatrace) | Meta repository linking the INATrace backend, frontend, mobile and blockchain components; blockchain-based track and trace for supply chains. |
-| [AgriOS](https://github.com/agstack/AgriOS) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/AgriOS?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/AgriOS) | Odoo 18 farm management addons: farmers, plots, trade and training (AGPL-3). |
-| [Canopi](https://github.com/opencanopi/canopi) ![GitHub Repo stars](https://img.shields.io/github/stars/opencanopi/canopi?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/opencanopi/canopi) | Agroecological design for permaculture, syntropic agriculture and food forests, with a plant catalog and geolocated map canvas. Rust and TypeScript, AGPL-3.0. |
-| [inatrace-coffee-network](https://github.com/agstack/inatrace-coffee-network) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/inatrace-coffee-network?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/inatrace-coffee-network) | Blockchain smart contracts for the coffee supply chain. |
-| [inatrace-frontend](https://github.com/agstack/inatrace-frontend) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/inatrace-frontend?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/inatrace-frontend) | Angular frontend. |
-| [inatrace-mobile](https://github.com/agstack/inatrace-mobile) ![GitHub Repo stars](https://img.shields.io/github/stars/agstack/inatrace-mobile?style=social)<br>![GitHub last commit](https://img.shields.io/github/last-commit/agstack/inatrace-mobile) | Mobile app for farmer data collection. |
 
 ## Geospatial and GIS
 
